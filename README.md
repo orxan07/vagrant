@@ -4,8 +4,8 @@ VAGRANT
 ## Requirements
 
 - Operating System: Windows, Linux, or OSX.
-- [Virtualbox][7]
-- [Vagrant][1]
+- [Virtualbox][1]
+- [Vagrant][2]
 
 ## Setup
 
@@ -60,4 +60,6 @@ everything is fine. Done!
 
 ```
 
+[1]: https://www.virtualbox.org
+[2]: http://vagrantup.com/
 
