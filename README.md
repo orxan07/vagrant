@@ -29,7 +29,7 @@ git config --global user.email <your email>
 ### Verifying GitHub access
 
 ```
-To verify that SSH agent forwarding was setup successfully, ssh into the virtual machine and run the following command.
+To verify that SSH agent forwarding was setup successfully, ssh into the virtual machine and run the following command:
 
     $ ssh -T git@github.com
 
@@ -40,4 +40,20 @@ If the output is
 everything is fine. If not, please consider the documentation for SSH.
 
 ```
+
+### Docker
+
+```
+Ssh into the virtual machine and run the following command:
+    $sudo usermod -G docker -a `whoami`
+    $exit
+    $vagrant ssh
+Run: 
+    $groups
+If the output is 
+    > vagrant docker
+everything is fine. Done!
+
+```
+
 
