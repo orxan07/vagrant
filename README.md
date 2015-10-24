@@ -3,7 +3,7 @@ VAGRANT
 
 vagrant up and running.
 
-## Setup: Vagrantfile
+## Setup
 
 ```
 git clone git@github.com:orxan07/vagrant.git
@@ -18,6 +18,7 @@ Done!
 ### GitHub
 
 ```
+Run 'vagrant ssh' then set your git config manually, e.g.:
 ssh-keygen -t rsa
 (Copy the contents of ~/.ssh/id_rsa.pub into your GitHub account: https://github.com/settings/ssh)
 git config --global user.name '<your name>'
