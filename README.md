@@ -1,7 +1,11 @@
 VAGRANT
 ================================
 
-vagrant up and running.
+## Requirements
+
+- Operating System: Windows, Linux, or OSX.
+- [Virtualbox][7]
+- [Vagrant][1]
 
 ## Setup
 
