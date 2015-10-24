@@ -16,15 +16,12 @@ vagrant up
 vagrant ssh
 ```
 
-Done! 
-
-
 ### GitHub
 
 ```
 Run 'vagrant ssh' then set your git config manually, e.g.:
 ssh-keygen -t rsa
-(Copy the contents of ~/.ssh/id_rsa.pub into your GitHub account: https://github.com/settings/ssh)
+(Copy the contents of ~/.ssh/id_rsa.pub into your GitHub account: [SSH settings][3])
 git config --global user.name '<your name>'
 git config --global user.email <your email>
 
@@ -62,4 +59,5 @@ everything is fine. Done!
 
 [1]: https://www.virtualbox.org
 [2]: http://vagrantup.com/
+[3]: https://github.com/settings/ssh
 
