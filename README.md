@@ -24,10 +24,11 @@ ssh-keygen -t rsa
 git config --global user.name '<your name>'
 git config --global user.email <your email>
 
+```
 
+### Verifying GitHub access
 
-#### Verifying GitHub access
-
+```
 To verify that SSH agent forwarding was setup successfully, ssh into the virtual machine and run the following command.
 
     $ ssh -T git@github.com
