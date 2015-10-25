@@ -71,6 +71,7 @@ Ssh into the virtual machine and run the following command:
     $ nscale system link
     $ nscale system compile
     $ nscale container buildall
+```
 
 [1]: https://www.virtualbox.org
 [2]: http://vagrantup.com/
