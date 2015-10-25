@@ -38,7 +38,7 @@ To verify that SSH agent forwarding was setup successfully, ssh into the virtual
 
 If the output is
 
-> Hi &lt;username&gt;! You've successfully authenticated, but GitHub does not provide shell access.
+> Hi <user name>! You've successfully authenticated, but GitHub does not provide shell access.
 
 everything is fine. If not, please consider the documentation for SSH.
 
