@@ -41,8 +41,6 @@ Vagrant.configure(2) do |config|
 
   # Synced Folder
   # --------------------
-  config.vm.synced_folder "./nscale/", "/nscale"
-  #config.vm.synced_folder ".", "/vagrant/", :mount_options => [ "dmode=777", "fmode=666" ]
-  #config.vm.synced_folder "./www", "/vagrant/www/", :mount_options => [ "dmode=775", "fmode=644" #], :owner => 'www-data', :group => 'www-data'
-
+  config.vm.synced_folder "./nscale/", "/nscale",type: "rsync",
+    rsync__exclude: ".git/"
 end
