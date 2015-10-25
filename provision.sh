@@ -24,7 +24,7 @@ apt-get install -y --force-yes lxc-docker
 
 
 #Set time
-sudo echo "Europe/Baku" | sudo tee /etc/timezone
+sudo echo "Europe/Moscow" | sudo tee /etc/timezone
 sudo dpkg-reconfigure -f noninteractive tzdata
 sudo apt-get update -y
 
