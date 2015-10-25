@@ -68,9 +68,11 @@ Ssh into the virtual machine and run the following command:
     $ nscale start
     $ nscale login
     $ cd /nscale
+    $ git init
     $ nscale system link
     $ nscale system compile
     $ nscale container buildall
+    $ nscale revision deploy latest production
 ```
 
 [1]: https://www.virtualbox.org
