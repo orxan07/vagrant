@@ -28,7 +28,7 @@ Vagrant.configure(2) do |config|
     # How much RAM to give the VM (in MB)
     # -----------------------------------
     v.customize ["modifyvm", :id, "--memory", "2048"]
-
+    v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     # Comment the bottom two lines to disable muli-core in the VM
     v.customize ["modifyvm", :id, "--cpus", "2"]
     v.customize ["modifyvm", :id, "--ioapic", "on"]
