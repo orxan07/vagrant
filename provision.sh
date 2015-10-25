@@ -13,7 +13,6 @@ apt-get update
 apt-get install -y nodejs
 
 # npm packages
-sudo npm install -g bower
 sudo npm install -g nscale
 
 # Docker
