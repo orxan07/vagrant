@@ -75,6 +75,10 @@ Ssh into the virtual machine and run the following command:
     $ nscale revision deploy latest production
 ```
 
+### Done
+
+go to  = > http://192.168.50.4/
+
 [1]: https://www.virtualbox.org
 [2]: http://vagrantup.com/
 
