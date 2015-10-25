@@ -1,16 +1,16 @@
 #!/bin/bash
 
-apt-get update
+sudo apt-get update
 
 # Install build tools
-apt-get install -y g++ git curl vim build-essential
+sudo apt-get install -y g++ git curl vim build-essential
 
 #nodejs
-apt-get update
-apt-get install -y python-software-properties python g++ make
-add-apt-repository -y ppa:chris-lea/node.js
-apt-get update
-apt-get install -y nodejs
+sudo apt-get update
+sudo apt-get install -y python-software-properties python g++ make
+sudo add-apt-repository -y ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install -y nodejs
 
 # npm packages
 sudo npm install -g nscale
@@ -18,8 +18,8 @@ sudo npm install -g nscale
 # Docker
 wget -q -O - https://get.docker.io/gpg | apt-key add -
 echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list
-apt-get update 
-apt-get install -y --force-yes lxc-docker
+sudo apt-get update 
+sudo apt-get install -y --force-yes lxc-docker
 
 
 #Set time
