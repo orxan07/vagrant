@@ -1,4 +1,4 @@
-VAGRANT
+VAGRANT - DOCKER - NSCALE
 ================================
 
 ## Requirements
@@ -20,10 +20,12 @@ vagrant ssh
 
 ```
 Run 'vagrant ssh' then set your git config manually, e.g.:
-ssh-keygen -t rsa
-(Copy the contents of ~/.ssh/id_rsa.pub into your GitHub account: [SSH settings][3])
-git config --global user.name '<your name>'
-git config --global user.email <your email>
+    $ git config --global user.name "your name"
+    $ git config --global user.email "your email"
+    $ ssh-keygen -t rsa -b 4096 -C "your email"
+    $ cat ~/.ssh/id_rsa.pub
+(Copy the contents of ~/.ssh/id_rsa.pub into your GitHub account: https://github.com/settings/ssh)
+
 
 ```
 
@@ -46,18 +48,30 @@ everything is fine. If not, please consider the documentation for SSH.
 
 ```
 Ssh into the virtual machine and run the following command:
-    $sudo usermod -G docker -a `whoami`
-    $exit
-    $vagrant ssh
+    $ sudo usermod -G docker -a `whoami`
+    $ exit
+    $ vagrant ssh
 Run: 
-    $groups
+    $ groups
 If the output is 
     > vagrant docker
 everything is fine. Done!
 
 ```
 
+### Nscale
+
+```
+(Requirements: setting git config)
+
+Ssh into the virtual machine and run the following command:
+    $ nscale start
+    $ nscale login
+    $ cd /nscale
+    $ nscale system link
+    $ nscale system compile
+    $ nscale container buildall
+
 [1]: https://www.virtualbox.org
 [2]: http://vagrantup.com/
-[3]: https://github.com/settings/ssh
 
