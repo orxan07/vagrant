@@ -10,7 +10,7 @@ VAGRANT - DOCKER - NSCALE
 ## Setup
 
 ```
-git clone git@github.com:orxan07/vagrant.git
+git clone https://github.com/orxan07/vagrant.git
 cd vagrant
 vagrant up
 vagrant ssh
