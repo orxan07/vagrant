@@ -11,14 +11,6 @@ exports.topology = {
     root: ['server', 'client','mongo']
   }
   development: {
-    root: ['doc', 'hist', 'real', 'web']
+    root: ['server']
   },
 };
-
-// Example
-//
-// exports.topology = {
-//   development: {
-//     root: ['web']
-//   }
-// };
