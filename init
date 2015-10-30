@@ -1,8 +1,7 @@
 echo "Start"
 
-touch ~/.ssh/config
 alias my-git='cp /git-config/my-config ~/.ssh/config'
-alias eu-git='cp /git-config/my-config ~/.ssh/config'
+alias eu-git='cp /git-config/eu-config ~/.ssh/config'
 
 nscale start
 nscale login
