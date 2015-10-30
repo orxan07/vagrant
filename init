@@ -1,0 +1,17 @@
+echo "Start"
+
+alias my-git='cp /git-config/my-config ~/.ssh/config'
+alias eu-git='cp /git-config/my-config ~/.ssh/config'
+
+nscale start
+nscale login
+cd ~
+cd /nscale
+git init
+nscale system link
+nscale system compile
+nscale container buildall latest production
+nscale revision deploy latest production
+docker ps
+
+echo "Finish!"
