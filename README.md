@@ -71,7 +71,7 @@ Ssh into the virtual machine and run the following command:
     $ git init
     $ nscale system link
     $ nscale system compile
-    $ nscale container buildall
+    $ nscale container buildall latest production
     $ nscale revision deploy latest production
 ```
 
