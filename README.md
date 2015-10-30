@@ -83,7 +83,7 @@ I’ll assume here you already have keys and their public parts and they are bot
 
 where id_rsa key pairs are yours account keys and second one for second user
 
-If you have a such structure you can switch between users by the commands:
+If you have such a structure you can easily switch between the users by means of the commands:
 
     $ my-git
     $ eu-git
