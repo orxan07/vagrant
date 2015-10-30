@@ -65,14 +65,29 @@ everything is fine. Done!
 (Requirements: setting git config)
 
 Ssh into the virtual machine and run the following command:
-    $ nscale start
-    $ nscale login
-    $ cd /nscale
-    $ git init
-    $ nscale system link
-    $ nscale system compile
-    $ nscale container buildall latest production
-    $ nscale revision deploy latest production
+    $source /vagrant/init
+```
+
+### Double GitHub accounts
+
+```
+(Requirements: finishing 'Nscale' part)
+
+I’ll assume here you already have keys and their public parts and they are both registered on your github accounts. We need have precisely the following in our ~/.ssh folder 
+
+  config
+  id_rsa
+  id_rsa.pub
+  id_rsa_eu
+  id_rsa_eu.pub
+
+where id_rsa key pairs are yours account keys and second one for second user
+
+If you have a such structure you can switch between users by the commands:
+
+    $ my-git
+    $ eu-git
+
 ```
 
 ### Done
