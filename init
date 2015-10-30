@@ -1,7 +1,7 @@
 echo "Start"
 
-alias my-git='cp /git-config/my-config ~/.ssh/config'
-alias eu-git='cp /git-config/eu-config ~/.ssh/config'
+alias my-git='cp /git-config/my-config ~/.ssh/config; echo "Git account is switched to first one"'
+alias eu-git='cp /git-config/eu-config ~/.ssh/config; echo "Git account is switched to second one"'
 
 nscale start
 nscale login
