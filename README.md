@@ -62,7 +62,7 @@ everything is fine. Done!
 ### Nscale
 
 ```
-(Requirements: setting git config)
+(Requirements: succesfully finishing 'Docker' & 'GitHub' parts)
 
 Ssh into the virtual machine and run the following command:
     $source /vagrant/init
@@ -71,7 +71,7 @@ Ssh into the virtual machine and run the following command:
 ### Double GitHub accounts
 
 ```
-(Requirements: finishing 'Nscale' part)
+(Requirements: succesfully finishing 'Nscale' part)
 
 I’ll assume here you already have keys and their public parts and they are both registered on your github accounts. We need have precisely the following in our ~/.ssh folder 
 
