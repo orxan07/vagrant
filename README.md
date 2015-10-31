@@ -67,6 +67,8 @@ everything is fine. Done!
 Ssh into the virtual machine and run the following command:
     $source /vagrant/init
 ```
+go to  = > http://192.168.50.4/
+
 
 ### Double GitHub accounts
 
@@ -90,9 +92,6 @@ If you have such a structure you can easily switch between the users by means of
 
 ```
 
-### Done
-
-go to  = > http://192.168.50.4/
 
 [1]: https://www.virtualbox.org
 [2]: http://vagrantup.com/
