@@ -12,6 +12,8 @@ nscale system link
 nscale system compile
 nscale container buildall latest production
 nscale revision deploy latest production
-docker ps
 
 echo "Finish!"
+exit
+
+
