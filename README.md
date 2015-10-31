@@ -65,7 +65,14 @@ everything is fine. Done!
 (Requirements: succesfully finishing 'Docker' & 'GitHub' parts)
 
 Ssh into the virtual machine and run the following command:
-    $source /vagrant/init
+
+    $ source /vagrant/init
+    
+After this vagrant is automatically closed. If you want to see the list of active docker containers:
+
+    $ vagrant ssh
+    $ docker ps
+    
 ```
 go to  = > http://192.168.50.4/
 
