@@ -21,4 +21,5 @@ exports.mongo = {
     execute: {
       args: '-d -p 27017:27017'
     }
-}
+  }
+};

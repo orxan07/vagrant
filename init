@@ -1,13 +1,21 @@
 echo "Start"
-
+cd ~
 
 echo "alias my-git='cp /git-config/my-config ~/.ssh/config; echo "Git account is switched to first one"'" >> ~/.bashrc
 echo "alias eu-git='cp /git-config/eu-config ~/.ssh/config; echo "Git account is switched to second one"'" >> ~/.bashrc
 
 nscale start
 nscale login
+
+cd /static-content
+git init
+nscale system link
+nscale system compile
+nscale container buildall latest production
+nscale revision deploy latest production
+
 cd ~
-cd /nscale
+cd /dynamic-content
 git init
 nscale system link
 nscale system compile
