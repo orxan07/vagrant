@@ -18,17 +18,21 @@ Vagrant.configure(2) do |config|
   config.vm.network "forwarded_port", guest: 8000, host: 8000
   config.vm.network "forwarded_port", guest: 8080, host: 8080
   config.vm.network "forwarded_port", guest: 8011, host: 8011
+  #mongo
   config.vm.network "forwarded_port", guest: 27017, host: 27017
+  #elk
   config.vm.network "forwarded_port", guest: 9200, host: 9200
   config.vm.network "forwarded_port", guest: 5000, host: 5000
   config.vm.network "forwarded_port", guest: 5601, host: 5601
   config.vm.network "forwarded_port", guest: 9300, host: 9300
+  #pm2 port
+  config.vm.network "forwarded_port", guest: 9615, host: 9615
 
   # Optional (Remove if desired)
   config.vm.provider :virtualbox do |v|
     # How much RAM to give the VM (in MB)
     # -----------------------------------
-    v.customize ["modifyvm", :id, "--memory", "1024"]
+    v.customize ["modifyvm", :id, "--memory", "2048"]
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     # Comment the bottom two lines to disable muli-core in the VM
     #v.customize ["modifyvm", :id, "--cpus", "2"]
@@ -43,4 +47,5 @@ Vagrant.configure(2) do |config|
   # Synced Folder
   # --------------------
   config.vm.synced_folder "./nscale/", "/nscale"
+  config.vm.synced_folder "./git-config/", "/git-config"
 end
