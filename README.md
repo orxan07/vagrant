@@ -62,22 +62,43 @@ everything is fine. Done!
 ### Nscale
 
 ```
-(Requirements: setting git config)
+(Requirements: succesfully finishing 'Docker' & 'GitHub' parts)
 
 Ssh into the virtual machine and run the following command:
-    $ nscale start
-    $ nscale login
-    $ cd /nscale
-    $ git init
-    $ nscale system link
-    $ nscale system compile
-    $ nscale container buildall latest production
-    $ nscale revision deploy latest production
+
+    $ source /vagrant/init
+    
+After this vagrant is automatically closed. If you want to see the list of active docker containers:
+
+    $ vagrant ssh
+    $ docker ps
+    
+```
+go to  = > http://192.168.50.4/
+
+
+### Double GitHub accounts
+
+```
+(Requirements: succesfully finishing 'Nscale' part)
+
+I’ll assume here you already have keys and their public parts and they are both registered on your github accounts. We need have precisely the following in our ~/.ssh folder 
+
+  config
+  id_rsa
+  id_rsa.pub
+  id_rsa_eu
+  id_rsa_eu.pub
+
+where id_rsa key pairs are yours account keys and second one for second user
+
+If you have such a structure you can easily switch between the users by means of the commands:
+
+    $ my-git
+    $ eu-git
+
 ```
 
-### Done
-
-go to  = > http://192.168.50.4/
 
 [1]: https://www.virtualbox.org
 [2]: http://vagrantup.com/
