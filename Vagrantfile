@@ -46,6 +46,7 @@ Vagrant.configure(2) do |config|
 
   # Synced Folder
   # --------------------
-  config.vm.synced_folder "./nscale/", "/nscale"
+  config.vm.synced_folder "./dynamic-content/", "/dynamic-content"
+  config.vm.synced_folder "./static-content/", "/static-content"
   config.vm.synced_folder "./git-config/", "/git-config"
 end

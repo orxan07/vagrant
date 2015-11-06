@@ -1,3 +1,5 @@
+// Place service container definitions here.
+
 exports.root = {
   type: 'blank-container'
 };
@@ -26,15 +28,6 @@ exports.client = {
     processBuild: 'npm install',
     execute: {
       args: '-p 80:80 -d'
-    }
-  }
-};
-exports.mongo = {
-  type: 'docker',
-  specific: {
-    name: 'mongo',
-    execute: {
-      args: '-d -p 27017:27017'
     }
   }
 };
