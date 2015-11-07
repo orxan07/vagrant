@@ -1,5 +1,3 @@
-// Place service container definitions here.
-
 exports.root = {
   type: 'blank-container'
 };
@@ -23,3 +21,15 @@ exports.mongo = {
     }
   }
 };
+
+
+exports.rabbitmq = {
+  type: 'docker',
+  specific: {
+    repositoryUrl: 'git@github.com:orxan07/rabbitmq.git',
+    execute: {
+      args: '-d -p 15672:15672 -d -p 4369:4369 -d -p 5672:5672'
+    }
+  }
+};
+
